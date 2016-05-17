@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 * Author: Krytia Fernandez
 * Date : May 17, 2016
 *Description: Advance Methods Demo for Lesson 2
-* Version : 0.0.3--  added  add x && y method 
+* Version : 0.0.4--  added  addYtoX method and test 
 */
 namespace week02_01
 {

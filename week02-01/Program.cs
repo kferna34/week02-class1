@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 * Author: Krytia Fernandez
 * Date : May 17, 2016
 *Description: Advance Methods Demo for Lesson 2
-* Version : 0.0.4--  added  addYtoX method and test 
+* Version : 0.0.5--  added a method in array ReadUntilEnd--not completed 
 */
 namespace week02_01
 {
@@ -26,7 +26,7 @@ namespace week02_01
         {
             int x = 50;
             int y = 40;
-            int result =0;
+            int result = 0;
             result = addXandY(x, y);
             Console.WriteLine(result);
             Console.WriteLine();
@@ -34,7 +34,8 @@ namespace week02_01
 
             addYtoX(ref x, ref x);
             Console.WriteLine(x);
-               
+
+            Console.WriteLine(readUntilEnd);
         }
         /*
         *simple method to add two values 
@@ -42,12 +43,12 @@ namespace week02_01
         *@param{int } first number
         *@param {int } second num
         */
-       public static int addXandY(int firstNumber, int secondNumber)
+        public static int addXandY(int firstNumber, int secondNumber)
         {
             int result = 0;
             result = firstNumber + secondNumber;
             return result;
-            
+
         }
         //simple method to demonstrate pass by ref with ref keyword
         //@mthod addYtoX
@@ -57,6 +58,30 @@ namespace week02_01
         {
             X += Y;
             return X;
+        }
+        public static string[] readUntilEnd()
+        {
+            string[] inputs = new string[3];
+            int inputCounter = 0;
+            
+            
+            do
+            {
+                Console.WriteLine("Enter a Value --('end' to stop)");
+                inputs[inputCounter] = Console.ReadLine();
+                if(inputs[inputCounter]=="end")
+                {
+                    inputCounter = -1;
+
+                }
+                else
+                {
+                    inputCounter++;
+                }
+            }
+            while (inputCounter != -1);
+
+            return inputs;
         }
     }
 }

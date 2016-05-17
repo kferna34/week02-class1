@@ -8,7 +8,7 @@ namespace UnitTestForWeek2Class1
     public class UnitTest1
     {
         [TestMethod]
-        public void addXandYTestMethod()
+        public void addYtoXTestMethod()
         {
             //Arrange
             int x = 40;
@@ -16,7 +16,7 @@ namespace UnitTestForWeek2Class1
             int expectedResult = 90;
 
             //Act
-            int result = Program.addXandY(x, y);
+            int result = Program.addYtoX(ref x, ref y);
 
 
             //Assert

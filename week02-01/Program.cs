@@ -35,7 +35,7 @@ namespace week02_01
             addYtoX(ref x, ref x);
             Console.WriteLine(x);
 
-            Console.WriteLine(readUntilEnd);
+            Console.WriteLine(readUntilEnd());
         }
         /*
         *simple method to add two values 
@@ -61,7 +61,7 @@ namespace week02_01
         }
         public static string[] readUntilEnd()
         {
-            string[] inputs = new string[3];
+            string[] inputs = new string[100];
             int inputCounter = 0;
             
             

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 * Author: Krytia Fernandez
 * Date : May 17, 2016
 *Description: Advance Methods Demo for Lesson 2
-* Version : 0.0.5--  added a method in array ReadUntilEnd--not completed 
+* Version : 0.0.6--  added a method in array ReadUntilEnd--not completed 
 */
 namespace week02_01
 {
@@ -68,7 +68,10 @@ namespace week02_01
             do
             {
                 Console.WriteLine("Enter a Value --('end' to stop)");
+                inputs[inputCounter] = "";
+
                 inputs[inputCounter] = Console.ReadLine();
+                Console.WriteLine(  "Array.length:":);
                 if(inputs[inputCounter]=="end")
                 {
                     inputCounter = -1;

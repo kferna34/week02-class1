@@ -11,16 +11,14 @@ namespace UnitTestForWeek2Class1
         public void addYtoXTestMethod()
         {
             //Arrange
-            int x = 40;
-            int y = 50;
-            int expectedResult = 90;
+            string[] returnedArray;
 
             //Act
-            int result = Program.addYtoX(ref x, ref y);
+            returnedArray = Program.readUntilEnd();
 
 
             //Assert
-            Assert.AreEqual(expectedResult, result);
+            Assert.IsTrue(returnedArray.Length == 0); //fail
         }
 
     }
